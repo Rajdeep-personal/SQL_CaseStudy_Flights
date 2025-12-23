@@ -268,7 +268,7 @@ on f.flightid = t.flightid group by al.airlineid, al.name;
 -- -----------------------------------------------------------------------------------------------------------------------
 
 ## Q10. For each passenger, identify their most frequently used airline. If a passenger has multiple airlines with the same
-## highest usage, show all such airlines.
+## highest usage, show all such airlines. #################################################################################
 
 with cte as(
 select p.passengerid, p.name as passengername, a.airlineid, a.name as airlinename,
